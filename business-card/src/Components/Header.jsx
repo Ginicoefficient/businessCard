@@ -6,6 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const evelope = <FontAwesomeIcon icon={faEnvelope} />;
 const linkedIn = <FontAwesomeIcon icon={faLinkedin} />;
+
 export default function Header() {
   return (
     <div className="header">
