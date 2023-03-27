@@ -1,5 +1,13 @@
 body {
   box-sizing: border-box;
+  background-color: rgb(164, 153, 197);
+  padding-top: 0.5rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #root {
@@ -7,13 +15,15 @@ body {
   /* max-width: 1280px; */
   text-align: center;
   width: 100vw;
+
   margin: 0;
 }
 
 body,
 p,
 h1,
-h3 {
+h3,
+h2 {
   margin: 0;
 }
 
@@ -39,15 +49,36 @@ p {
   max-width: 957px;
   min-width: 340px;
   padding-bottom: 1em;
+  padding-top: 1%;
+  flex: 1;
 }
 
+div.body-container > p {
+  text-align: center;
+  padding: 0 2.5em;
+}
 .img-container {
-  min-width: 200px;
-  height: 35vh;
+  height: 30vh;
   max-width: 400px;
   overflow: hidden;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .img-container {
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+  }
+  .portrait-img {
+    transform: scale(3.2) translate(-5px, 40px);
+    object-fit: cover;
+  }
+
+  body {
+    line-height: 1.05;
+  }
 }
 
 .portrait-img {
@@ -76,4 +107,19 @@ button:active {
 
 button:hover {
   background-color: rgb(101, 93, 122);
+}
+
+div.socials-holder > button {
+  font-size: 1.5rem;
+}
+
+.socials-holder {
+  background-color: rgb(164, 153, 197);
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  gap: 1em;
 }

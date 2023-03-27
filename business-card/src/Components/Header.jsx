@@ -13,9 +13,8 @@ export default function Header() {
       <div className="img-container">
         <img className="portrait-img" src={selfPortrait} />
       </div>
-      <h1>Ginny Mitchell</h1>
+      <h2>Ginny Mitchell</h2>
       <p>Frontend Developer in Training</p>
-      <p>ginny.e.mitchell@gmail.com</p>
       <div className="btn-container">
         <button className="btn-email">{evelope} Email</button>
         <button className="btn-linkdin">{linkedIn} LinkedIn</button>
